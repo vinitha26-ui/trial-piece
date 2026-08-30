@@ -1,0 +1,57 @@
+:host {
+  display: block;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  
+  /* CRUCIAL EXTRA BLUR: Thick displacement distortion */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  
+  /* Ultra-soft elegant depth footprint */
+  box-shadow: 
+    0 15px 45px -10px rgba(26, 26, 26, 0.04),
+    inset 0 1px 2px 0px rgba(255, 255, 255, 0.45);
+    
+  border-radius: 28px;
+  padding: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Typography styles inside cards */
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-lo);
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.02em;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-lo);
+  margin: 0 0 8px 0;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.metric {
+  margin: 0;
+  color: var(--text-lo);
+  font-size: 14px;
+}
