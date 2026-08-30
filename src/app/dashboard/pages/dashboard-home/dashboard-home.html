@@ -1,0 +1,14 @@
+    <app-glass-card>
+  <div class="eyebrow">Featured</div>
+  <h2>Pure, Small-Batch Herbal Wellness</h2>
+  <p class="metric">Shipping across India & internationally</p>
+</app-glass-card>
+
+    <div class="stat-row">
+  <app-glass-card *ngFor="let product of products">
+    <h4>{{ product.category }}</h4>
+    <div class="value">{{ product.name }}</div>
+    <p class="metric">₹{{ product.basePriceINR }}</p>
+  </app-glass-card>
+</div>
+ 
